@@ -1,6 +1,8 @@
 # quick sort
 
-
+arr = [9,7,6,4,2,1,3,5,8]
+si = 0
+ei = len(arr)-1
 
 def partition(si,ei,arr):
     pivot_ele = arr[si]
@@ -21,7 +23,7 @@ def partition(si,ei,arr):
         if arr[l]<arr[pivot_index]:
             l+=1
         elif arr[m]>arr[pivot_index]:
-            m+=1
+            m-=1
         else:
             arr[l],arr[m] = arr[m],arr[l]
 
@@ -39,3 +41,6 @@ def quick_sort(si,ei,arr):
 
 
 
+quick_sort(si,ei,arr)
+
+print(arr)
