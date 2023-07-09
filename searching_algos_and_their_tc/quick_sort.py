@@ -1,5 +1,7 @@
 # quick sort
 
+# tc is best 
+
 arr = [9,7,6,4,2,1,3,5,8]
 si = 0
 ei = len(arr)-1
