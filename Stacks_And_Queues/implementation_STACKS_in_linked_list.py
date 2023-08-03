@@ -28,18 +28,21 @@ class Stack:
         return data
 
     def top(self):
-        return self.head.data
+        if not self.is_empty():
+            return self.head.data
+        else:
+            return "Empty Stack"
 
     def size(self):
         return self.count
 
 
-s = Stack()
-
-for i in range(1, 10):
-    s.push(i)
-    print(f" Pushed {i} element on top is ", s.top())
-
-for j in range(11):
-    x = s.pop()
-    print(f"element popped is ", x)
+# s = Stack()
+#
+# for i in range(1, 10):
+#     s.push(i)
+#     print(f" Pushed {i} element on top is ", s.top(), f" And the count is {s.size()}")
+#
+# for j in range(11):
+#     x = s.pop()
+#     print(f"element popped is ", x, f"And the count is {s.size()}")
