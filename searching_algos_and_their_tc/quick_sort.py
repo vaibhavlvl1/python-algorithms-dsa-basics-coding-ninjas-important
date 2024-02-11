@@ -1,6 +1,6 @@
 # quick sort
 
-# tc is best 
+# tc is best nlogn  worst n2
 
 arr = [9,7,6,4,2,1,3,5,8]
 si = 0
